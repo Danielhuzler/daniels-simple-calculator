@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple-calculator</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="shortcut icon" href="images/calculator favicon.png" type="image/x-icon">
+</head>
+<body>
+<div class="simple-calculator-main">
+  <div class="simple-calculator-inner-container">
+    <div class="calculator-heading">Simple-Calculator</div>
+    <div class="input" id="input-result">0</div>
+    <div class="full-button-container">
+    <div class="row1">
+      <div class="col1 hover" onclick="location.reload()" id="clear">AC</div>
+      <div class="col1 hover" onclick="remove()" id="delete">DELETE</div>
+      <div class="col1 green hover" onclick="calc()" id="equal">=</div>
+      <div class="col1 red hover" onclick="add('/')" id="divide">/</div>
+    </div>
+    <div class="row2">
+      <div class="col1 hover" onclick="add('7')" id="7">7</div>
+      <div class="col1 hover" onclick="add('8')" id="8">8</div>
+      <div class="col1 hover" onclick="add('9')" id="9">9</div>
+      <div class="col1 red hover" onclick="add('*')" id="multiply">*</div>
+    </div>
+    <div class="row3">
+      <div class="col1 hover" onclick="add('4')" id="4">4</div> 
+      <div class="col1 yellow hover" onclick="add('5')" id="5">5</div>
+      <div class="col1 hover" onclick="add('6')" id="6">6</div>
+      <div class="col1  red hover " onclick="add('-')" id="subtract">-</div>
+    </div>
+    <div class="row4">
+      <div class="col1 hover" onclick="add('1')" id="1">1</div>
+      <div class="col1 hover" onclick="add('2')" id="2">2</div>
+      <div class="col1 hover" onclick="add('3')" id="3">3</div>
+      <div class="col1 red hover" onclick="add('+')" id="add">+</div>
+    </div>
+    <div class="row5 ">
+      <div class="col2 hover" onclick="add('0')" id="0">0</div>
+      <div class="col1 hover" onclick="add('.')" id="dot">.</div>
+      <div class="col1 red hover" onclick="add ('%')" id="percentile">%</div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="/script.js"></script>
+
+  
+</body>
+</html>
